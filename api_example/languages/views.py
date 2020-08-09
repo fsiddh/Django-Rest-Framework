@@ -6,7 +6,7 @@ from .models import Language, Paradigm, Programmer
 from .serializers import LanguageSerializer, ParadigmSerializer, ProgrammerSerializer
 
 class ParadigmView(viewsets.ModelViewSet):
-    queryset = Language.objects.all()
+    queryset = Paradigm.objects.all()
     serializer_class = ParadigmSerializer
 
 
@@ -16,5 +16,5 @@ class LanguageView(viewsets.ModelViewSet):
 
 
 class ProgrammerView(viewsets.ModelViewSet):
-    queryset = Language.objects.all()
+    queryset = Programmer.objects.all()
     serializer_class = ProgrammerSerializer
