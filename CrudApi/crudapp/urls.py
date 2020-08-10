@@ -6,7 +6,7 @@ from . import views
 router = routers.DefaultRouter()
 router.register('friend', views.FriendViewset)
 router.register('belonging', views.BelongingViewset)
-router.register('borrowed', view.BorrowedViewset)
+router.register('borrowed', views.BorrowedViewset)
 
 urlpatterns = [
     path('', include(router.urls))
