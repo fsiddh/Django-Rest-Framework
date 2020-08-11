@@ -9,5 +9,5 @@ router.register('belonging', views.BelongingViewset)
 router.register('borrowed', views.BorrowedViewset)
 
 urlpatterns = [
-    path('', include(router.urls))
+    path('api/', include(router.urls))
 ]
