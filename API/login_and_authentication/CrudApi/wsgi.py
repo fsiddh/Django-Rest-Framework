@@ -1,5 +1,5 @@
 """
-WSGI config for Login_and_Authentiction project.
+WSGI config for CrudApi project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Login_and_Authentiction.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'CrudApi.settings')
 
 application = get_wsgi_application()
